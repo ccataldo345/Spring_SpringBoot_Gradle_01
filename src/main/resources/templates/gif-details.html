@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+
+    <link rel="stylesheet" th:href="@{/style.css}">
+
+    <title>giflib</title>
+</head>
+<body>
+    <h1>Gif page</h1>
+    <p th:text="'User: ' + ${gif.username}"/>
+    <p th:text="'Uploaded on: ' + ${gif.dateUploaded}"/>
+    <p th:text="'URL: http://gif.bn/' + ${gif.name}"/>
+    <img th:src="@{'/gifs/' + ${gif.name} + '.gif'}" alt="gif" style="max-height:300px"/>
+    <a href="#" th:class="(${gif.favourite} ? 'un': '') + 'mark favourite'"></a>
+</body>
+</html>
