@@ -34,7 +34,7 @@ public class GifController {
     // part 2 - use GifRepository.gifDetails method
     @RequestMapping("/gif/{name}")
     public String gifDetails(@PathVariable String name, ModelMap modelMap) {
-        Gif gif = gifRepository.findBName(name);
+        Gif gif = gifRepository.findGifByName(name);
         modelMap.put("gif", gif);
         return "gif-details";
     }
@@ -43,6 +43,7 @@ public class GifController {
     public String listGifs(ModelMap modelMap) {
         List<Gif> allGifs = gifRepository.getAllGifs();
         modelMap.put("gifs", allGifs);
+        System.out.println();
         return "gif-list";
     }
 

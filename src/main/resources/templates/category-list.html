@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+
+    <link rel="stylesheet" th:href="@{/style.css}">
+
+    <title>giflib</title>
+</head>
+<body>
+    <h1>Category List</h1>
+    <table>
+        <tr>
+            <td style="width:150px; height:150px; text-align:center; vertical-align:middle">
+                <div th:each="category : ${categories}">
+                    <a th:href="@{'/category/' + ${category.id}}" th:text="${category.name}"/>
+                </br>
+                </br>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

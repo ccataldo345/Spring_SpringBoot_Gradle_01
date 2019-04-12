@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+
+    <link rel="stylesheet" th:href="@{/style.css}">
+
+    <title>giflib</title>
+</head>
+<body>
+<h1>Gif page by category</h1>
+
+<table>
+    <tr>
+        <td style="width:150px; height:150px; text-align:center; vertical-align:middle">
+            <div th:each="gif : ${gifs}">
+                <img th:src="@{'/gifs/' + ${gif.name} + '.gif'}" alt="gif" style="max-height:300px"/>
+                <a th:text="${gif.name}"/>
+                </br>
+                </br>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<!--
+    <img th:src="@{'/gifs/' + ${gifs.categoryName} + '.gif'}" alt="gif" style="max-height:300px"/>
+    <a th:text="${gifs.categoryName}"/>
+-->
+</body>
+</html>

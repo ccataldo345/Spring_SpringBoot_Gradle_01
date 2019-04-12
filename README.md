@@ -6,5 +6,11 @@ Basic exercise with Spring, Spring Boot, Gradle - ex01
 	
 02 - Add Controller and Thymeleaf
 
-03 - MOJO (gif object), Dependency Injection (@Autowired), @PathVariable
+03 - POJO (gif object), Dependency Injection (@Autowired), @PathVariable
 
+04 - Add Category list; </br>
+
+MVC Architecture: </br>
+- Model = gif object; </br>
+- View = thymeleaf templates; </br>
+- Controller = gif controller.
