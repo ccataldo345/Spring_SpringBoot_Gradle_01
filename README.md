@@ -21,3 +21,12 @@ MVC Architecture: </br>
 - Model = gif object; </br>
 - View = thymeleaf templates; </br>
 - Controller = gif controller.
+
+Used Annotations list:
+- @Autowired
+- @Component
+- @Controller
+- @PathVariable
+- @RequestMapping
+- @SpringBootApplication
+
