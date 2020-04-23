@@ -30,3 +30,6 @@ Used Annotations list:
 - @RequestMapping
 - @SpringBootApplication
 
+#### Usage
+Import build.gradle file in IDE
+open browser to localhost:8080
