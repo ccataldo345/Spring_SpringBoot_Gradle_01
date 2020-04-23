@@ -1,8 +1,21 @@
-# Spring_SpringBoot_Gradle_01
+# Spring_SpringBoot_Gradle_01 
 
 ### Usage
-Import build.gradle file in IDE   
-open browser to localhost:8080   
+\- Import build.gradle file in IDE;  
+\- Run com/chris/giflib/AppConfig.java;   
+\- Open browser to localhost:8080.   
+
+### Gradle run commands:
+
+gradle clean  
+gradle build  
+gradle run  
+
+### Gradle Wrapper run commands:
+
+./gradlew clean  
+./gradlew build  
+./gradlew run  
 
 ### Description   
   
@@ -22,12 +35,12 @@ Basic website where a list of "uploaded" images are shown as list or by category
 
 03 - POJO (gif object), Dependency Injection (@Autowired), @PathVariable
 
-04 - Add Category list; </br>
+04 - Add Category list;   
 
-MVC Architecture: </br>
-- Model = gif object; </br>
-- View = thymeleaf templates; </br>
-- Controller = gif controller.
+MVC Architecture:   
+- Model = gif object;    
+- View = thymeleaf templates;     
+- Controller = gif controller.   
 
 Used Annotations list:
 - @Autowired
