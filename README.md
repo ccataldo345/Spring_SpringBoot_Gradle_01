@@ -1,4 +1,11 @@
 # Spring_SpringBoot_Gradle_01
+
+### Usage
+Import build.gradle file in IDE   
+open browser to localhost:8080   
+
+### Description   
+  
 Basic exercise with Spring, Spring Boot, MVC, Gradle - ex01
 
 Basic website where a list of "uploaded" images are shown as list or by category.
@@ -29,7 +36,3 @@ Used Annotations list:
 - @PathVariable
 - @RequestMapping
 - @SpringBootApplication
-
-#### Usage
-Import build.gradle file in IDE
-open browser to localhost:8080
